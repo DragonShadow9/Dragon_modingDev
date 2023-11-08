@@ -1,0 +1,10 @@
+echo "Starting commit process"
+
+read -p "Enter your commit message: " message 
+
+git add --all
+git commit -m "$message"
+git push 
+git pull 
+
+echo "Committed and pushed to GitHub!"
